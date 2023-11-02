@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi juego</title>
+</head>
+<body>
+
+  <div id="contenedor">
+    <div id="cabecera">
+      <h1>Mi juego</h1>
+    </div>
+    <div id="contenido">
+
+      <div id="registro" class="oculto">
+        <h2>Registro</h2>
+        <form action="registrar.php" method="post">
+          <input type="text" name="nombre" placeholder="Nombre">
+          <input type="text" name="correo" placeholder="Correo electrónico">
+          <input type="password" name="contraseña" placeholder="Contraseña">
+          <input type="submit" value="Registrar">
+        </form>
+      </div>
+
+      <div id="inicio-sesion" class="oculto">
+        <h2>Inicio de sesión</h2>
+        <form action="iniciar-sesion.php" method="post">
+          <input type="text" name="correo" placeholder="Correo electrónico">
+          <input type="password" name="contraseña" placeholder="Contraseña">
+          <input type="submit" value="Iniciar sesión">
+        </form>
+      </div>
+
+      <div id="seleccion-avatar" class="oculto">
+        <h2>Selecciona tu avatar</h2>
+        <div id="avatares">
+          <img src="imagenes/avatares/avatar1.png" alt="Avatar 1">
+          <img src="imagenes/avatares/avatar2.png" alt="Avatar 2">
+          <img src="imagenes/avatares/avatar3.png" alt="Avatar 3">
+          <img src="imagenes/avatares/avatar4.png" alt="Avatar 4">
+          <img src="imagenes/avatares/avatar5.png" alt="Avatar 5">
+        </div>
+        <input type="submit" value="Seleccionar avatar">
+      </div>
+
+      <div id="mundo-abierto" class="oculto">
+        <h2>Bienvenido al mundo abierto</h2>
+
+        <div id="objetos">
+          <img src="imagenes/objetos/arbol.png" alt="Árbol">
+          <img src="imagenes/objetos/roca.png" alt="Roca">
+          <img src="imagenes/objetos/animal.png" alt="Animal">
+          <img src="imagenes/objetos/npc.png" alt="NPC">
+          <img src="imagenes/objetos/coche.png" alt="Coche">
+        </div>
+
+        <div id="eventos">
+          <div class="evento">
+            <h3>Evento aleatorio</h3>
+            <p>Un NPC te pide ayuda para encontrar un objeto perdido.</p>
+          </div>
+          <div class="evento">
+            <h3>Misión principal</h3>
+            <p>Derrota al jefe final para salvar el mundo.</p>
+          </div>
+          <div class="evento">
+            <h3>Misión secundaria</h3>
+            <p>Recoge 10 manzanas para el granjero.</p>
+          </div>
+        </div>
+
+        <div id="combate">
+          <h3>Combate</h3>
+          <p>Puedes luchar contra otros jugadores o monstruos para ganar experiencia y recompensas.</p>
+        </div>
+
+        <div id="chat">
+          <h3>Chat</h3>
+          <p>Puedes comunicarte con otros jugadores a través del chat.</p>
+
+          <div id="chat-privado">
+            <h4>Chat privado</h4>
+            <input type="text" id="nombre-usuario" placeholder="Nombre de usuario">
+            <input type="submit" value="Enviar mensaje">
+          </div>
+
+          <div id="chat-grupo">
+            <h4>Chat de grupo</h4>
+            <
